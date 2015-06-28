@@ -15,7 +15,7 @@ public interface MessageRepository extends JpaRepository<Message,Long> {
     @Query("select message from Message message where message.user.login = ?#{principal.username}")
     List<Message> findAllForCurrentUser();
 
-    @Query("select message.originatingCountry, message.timePlaced, sum(message.amountSell), sum(message.amountBuy) from Message message where message.timePlaced = :timePlaced and message.originatingCountry = :originatingCountry  group by message.timePlaced")
+    @Query("select message.originatingCountry, message.timePlaced, sum(message.amountSell) from Message message where message.timePlaced = :timePlaced and message.originatingCountry = :originatingCountry  group by message.timePlaced, message.originatingCountry")
     List<Object[]> findOneGroupedByOriginatingCountryAndTimePlaced(@Param("originatingCountry") String originatingCountry, @Param("timePlaced") LocalDate timePlaced);
 
 

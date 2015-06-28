@@ -9,11 +9,11 @@ spring:
         active: prod
     datasource:
         dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
-        url:
+        url: jdbc:postgresql://localhost:5433/messagy
         databaseName: messagy
         serverName: localhost
-        username: messagy
-        password:
+        username: user
+        password: password
 
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL82Dialect
