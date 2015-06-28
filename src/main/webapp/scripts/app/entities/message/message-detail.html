@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span>Message</span> {{message.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span>CurrencyFrom</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.currencyFrom}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>CurrencyTo</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.currencyTo}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>AmountSell</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.amountSell}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>AmountBuy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.amountBuy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Rate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.rate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>TimePlaced</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.timePlaced}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>OriginatingCountry</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.originatingCountry}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>user</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{message.user.login}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="message"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

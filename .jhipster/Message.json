@@ -1,0 +1,124 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "relationshipNameCapitalized": "User",
+            "relationshipFieldName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "User",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "currencyFrom",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CurrencyFrom",
+            "fieldNameUnderscored": "currency_from",
+            "fieldInJavaBeanMethod": "CurrencyFrom",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "3",
+            "fieldValidateRulesMaxlength": "3"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "currencyTo",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CurrencyTo",
+            "fieldNameUnderscored": "currency_to",
+            "fieldInJavaBeanMethod": "CurrencyTo",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "3",
+            "fieldValidateRulesMaxlength": "3"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "amountSell",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "AmountSell",
+            "fieldNameUnderscored": "amount_sell",
+            "fieldInJavaBeanMethod": "AmountSell",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "amountBuy",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "AmountBuy",
+            "fieldNameUnderscored": "amount_buy",
+            "fieldInJavaBeanMethod": "AmountBuy",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "rate",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Rate",
+            "fieldNameUnderscored": "rate",
+            "fieldInJavaBeanMethod": "Rate",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "timePlaced",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "TimePlaced",
+            "fieldNameUnderscored": "time_placed",
+            "fieldInJavaBeanMethod": "TimePlaced",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "originatingCountry",
+            "fieldType": "String",
+            "fieldNameCapitalized": "OriginatingCountry",
+            "fieldNameUnderscored": "originating_country",
+            "fieldInJavaBeanMethod": "OriginatingCountry",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "2",
+            "fieldValidateRulesMaxlength": "2"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150628221909",
+    "dto": "no",
+    "pagination": "no",
+    "validation": true
+}
